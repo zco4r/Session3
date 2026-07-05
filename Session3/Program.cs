@@ -29,6 +29,21 @@ class Program
 
         Console.WriteLine("The square of the number is: " + square);
         Console.WriteLine("The square root of the number is: " + squareRoot);
+        
+        //Task 3 - Name Formatter
+
+                Console.Write("Enter your full name: ");
+                string fullName = Console.ReadLine();
+
+                string upperName = fullName.ToUpper();
+
+                string lowerName = fullName.ToLower();
+
+                int characterCount = fullName.Length;
+
+                Console.WriteLine("Uppercase: " + upperName);
+                Console.WriteLine("Lowercase: " + lowerName);
+                Console.WriteLine("Character count: " + characterCount);
 
 
     }
