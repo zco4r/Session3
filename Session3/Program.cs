@@ -168,6 +168,31 @@ class Program
         {
             Console.WriteLine("Error: Please enter a valid decimal number.");
         }
+        
+        //Task 10 - Word Position Finder
+
+        Console.Write("Enter a full sentence: ");
+        string sentence = Console.ReadLine();
+
+        Console.Write("Enter a word to search for: ");
+        string word = Console.ReadLine();
+
+        int firstIndex = sentence.IndexOf(word);
+        
+        int lastIndex = sentence.LastIndexOf(word);
+
+        Console.WriteLine("\n--- Search Results ---");
+        
+        if (firstIndex == -1)
+        {
+            Console.WriteLine($"The word '{word}' was not found in the sentence.");
+        }
+        else
+        {
+            Console.WriteLine($"First occurrence of '{word}' is at index: {firstIndex}");
+            Console.WriteLine($"Last occurrence of '{word}' is at index:  {lastIndex}");
+        }
+
 
     }
 }

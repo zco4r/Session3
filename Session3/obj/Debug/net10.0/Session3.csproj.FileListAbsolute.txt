@@ -1,0 +1,15 @@
+/Users/ammaralazki/RiderProjects/Session3/Session3/bin/Debug/net10.0/Session3
+/Users/ammaralazki/RiderProjects/Session3/Session3/bin/Debug/net10.0/Session3.deps.json
+/Users/ammaralazki/RiderProjects/Session3/Session3/bin/Debug/net10.0/Session3.runtimeconfig.json
+/Users/ammaralazki/RiderProjects/Session3/Session3/bin/Debug/net10.0/Session3.dll
+/Users/ammaralazki/RiderProjects/Session3/Session3/bin/Debug/net10.0/Session3.pdb
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.AssemblyInfoInputs.cache
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.AssemblyInfo.cs
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.csproj.CoreCompileInputs.cache
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.sourcelink.json
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.dll
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/refint/Session3.dll
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.pdb
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/Session3.genruntimeconfig.cache
+/Users/ammaralazki/RiderProjects/Session3/Session3/obj/Debug/net10.0/ref/Session3.dll
