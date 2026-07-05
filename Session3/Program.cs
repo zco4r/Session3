@@ -93,6 +93,28 @@ class Program
             Console.WriteLine("Weak: The password is either too short or contains the forbidden word.");
         }
 
+        //Task 7 - Clean Name Comparator
+        
+
+        Console.Write("Enter the first name: ");
+        string name1 = Console.ReadLine();
+
+        Console.Write("Enter the name again: ");
+        string name2 = Console.ReadLine();
+
+        string cleanName1 = name1.Trim().ToLower();
+        string cleanName2 = name2.Trim().ToLower();
+
+        if (cleanName1 == cleanName2)
+        {
+            Console.WriteLine("Match");
+        }
+        else
+        {
+            Console.WriteLine("No Match");
+        }
+        
+
 
     }
 }
