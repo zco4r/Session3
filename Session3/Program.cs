@@ -144,6 +144,30 @@ class Program
             Console.WriteLine("Error: Please enter the date in the correct format (yyyy-mm-dd).");
         }
         
+        //Task 9 - Round Up / Round Down Explorer
+
+        
+        Console.Write("Please enter a decimal number: ");
+        string input = Console.ReadLine();
+
+        if (double.TryParse(input, out double Number))
+        {
+            double rounded = Math.Round(Number);
+
+            double ceiling = Math.Ceiling(Number);
+
+            double floor = Math.Floor(Number);
+
+            Console.WriteLine("\n--- Rounding Results ---");
+            Console.WriteLine($"Original Number: {Number}");
+            Console.WriteLine($"Nearest Whole Number (Math.Round): {rounded}");
+            Console.WriteLine($"Always Rounded Up (Math.Ceiling): {ceiling}");
+            Console.WriteLine($"Always Rounded Down (Math.Floor):  {floor}");
+        }
+        else
+        {
+            Console.WriteLine("Error: Please enter a valid decimal number.");
+        }
 
     }
 }
