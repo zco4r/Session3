@@ -231,8 +231,48 @@ class Program
         {
             Console.WriteLine("Maximum attempts reached. Access denied.");
         }
+        
+        //Task 12 - Birthday Insights
 
 
+        Random Rnd = new Random();
+        int OTP = Rnd.Next(1000, 10000);
 
+        Console.WriteLine($"Your OTP is: {OTP}");
+        Console.WriteLine("Please enter the code to verify:");
+
+        int Attempts = 0;
+        bool isverified = false;
+
+        while (Attempts < 3)
+        {
+            try
+            {
+                int Input = int.Parse(Console.ReadLine());
+
+                if (Input == OTP)
+                {
+                    Console.WriteLine("Verified");
+                    isverified = true;
+                    break;
+                }
+                else
+                {
+                    attempts++;
+                    Console.WriteLine($"Verification Failed. Attempts left: {3 - attempts}");
+                }
+            }
+            catch (FormatException)
+            {
+                attempts++;
+                Console.WriteLine($"Invalid input. Please enter a number. Attempts left: {3 - attempts}");
+            }
+        }
+
+        if (!isVerified)
+        {
+                    Console.WriteLine("Maximum attempts reached. Access denied.");
+        }
+        
     }
 }
