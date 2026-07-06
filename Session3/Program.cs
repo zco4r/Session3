@@ -195,7 +195,6 @@ class Program
         
         //Task 11 - One-Time Password (OTP) Generator
 
-                // Generate a random 4-digit code between 1000 and 9999
         Random rnd = new Random();
         int otp = rnd.Next(1000, 10000);
 
@@ -205,7 +204,6 @@ class Program
         int attempts = 0;
         bool isVerified = false;
 
-                // Give the user up to 3 attempts
         while (attempts < 3)
         {
             try
@@ -224,7 +222,6 @@ class Program
             }
             catch (FormatException)
             {
-                        // Handle non-numeric input
                 attempts++;
                 Console.WriteLine($"Invalid input. Please enter a number. Attempts left: {3 - attempts}");
             }
