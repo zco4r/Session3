@@ -192,6 +192,49 @@ class Program
             Console.WriteLine($"First occurrence of '{word}' is at index: {firstIndex}");
             Console.WriteLine($"Last occurrence of '{word}' is at index:  {lastIndex}");
         }
+        
+        //Task 11 - One-Time Password (OTP) Generator
+
+                // Generate a random 4-digit code between 1000 and 9999
+        Random rnd = new Random();
+        int otp = rnd.Next(1000, 10000);
+
+        Console.WriteLine($"Your OTP is: {otp}");
+        Console.WriteLine("Please enter the code to verify:");
+
+        int attempts = 0;
+        bool isVerified = false;
+
+                // Give the user up to 3 attempts
+        while (attempts < 3)
+        {
+            try
+            { int Input = int.Parse(Console.ReadLine());
+                if (Input == otp)
+                {
+                    Console.WriteLine("Verified");
+                    isVerified = true;
+                    break;
+                }
+                else
+                {
+                    attempts++;
+                    Console.WriteLine($"Verification Failed. Attempts left: {3 - attempts}");
+                }
+            }
+            catch (FormatException)
+            {
+                        // Handle non-numeric input
+                attempts++;
+                Console.WriteLine($"Invalid input. Please enter a number. Attempts left: {3 - attempts}");
+            }
+        }
+
+        if (!isVerified)
+        {
+            Console.WriteLine("Maximum attempts reached. Access denied.");
+        }
+
 
 
     }
